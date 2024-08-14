@@ -1,0 +1,5 @@
+{
+    "dependencies": {
+        "@substrate-system/css-util": "../"
+    }
+}
