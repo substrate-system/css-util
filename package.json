@@ -32,9 +32,11 @@
     "vite": "^5.3.4"
   },
   "exports": {
-    "./css": "./dist/style.css",
-    "./css/min": "./dist/style.min.css",
-    "./css/*": "./dist/*.css"
+    ".": "./dist/index.css",
+    "./css": "./dist/index.css",
+    "./css/min": "./dist/index.min.css",
+    "./css/*": "./dist/*.css",
+    "./css/min/*": "./dist/*.min.css"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "MIT"
