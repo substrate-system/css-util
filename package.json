@@ -8,9 +8,8 @@
   ],
   "scripts": {
     "lint": "eslint \"./**/*.{ts,js}\"",
-    "test-tape-run": "cat test/index.html | tape-run --input=html --static=test | tap-spec",
-    "build-css": "postcss src/index.css --use postcss-nesting > dist/style.css",
-    "build-css:min": "postcss src/index.css --use cssnano postcss-nesting > dist/style.min.css",
+    "build-css": "postcss src/*.css --use postcss-nesting --dir dist",
+    "build-css:min": "postcss src/*.css --dir dist --ext .min.css --use cssnano postcss-nesting",
     "build-example": "mkdir -p ./public && rm -rf ./public/* && VITE_DEBUG_MODE=staging vite --mode staging --base=\"/css-util\" build",
     "build": "mkdir -p ./dist && rm -rf ./dist/* && npm run build-css && npm run build-css:min",
     "start": "vite",
