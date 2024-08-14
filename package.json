@@ -32,22 +32,9 @@
     "vite": "^5.3.4"
   },
   "exports": {
-    ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
-    },
     "./css": "./dist/style.css",
     "./css/min": "./dist/style.min.css",
-    "./*": {
-      "import": [
-        "./dist/*.js",
-        "./dist/*"
-      ],
-      "require": [
-        "./dist/*.cjs",
-        "./dist/*"
-      ]
-    }
+    "./css/*": "./dist/*.css"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "MIT"
