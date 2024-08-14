@@ -13,6 +13,13 @@ Common CSS
 
 <!-- toc -->
 
+- [install](#install)
+- [use](#use)
+  * [Import CSS](#import-css)
+  * [pre-built](#pre-built)
+
+<!-- tocstop -->
+
 ## install
 
 ```sh
