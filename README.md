@@ -76,9 +76,7 @@ Factor out the css for back / next arrows, so there is less duplication.
 
 ```js
 import '@substrate-system/css-util/arrow'
-```
 
-#### minified
-```js
+// or minified
 import '@substrate-system/css-util/min/arrow'
 ```
