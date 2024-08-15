@@ -6,6 +6,16 @@
   "files": [
     "./dist/*"
   ],
+  "exports": {
+    ".": "./dist/index.css",
+    "./min": "./dist/index.min.css",
+    "./*": "./dist/*.css",
+    "./min/*": "./dist/*.min.css",
+    "./css": "./dist/index.css",
+    "./css/min": "./dist/index.min.css",
+    "./css/*": "./dist/*.css",
+    "./css/min/*": "./dist/*.min.css"
+  },
   "scripts": {
     "lint": "eslint \"./**/*.{ts,js}\"",
     "build-css": "postcss src/*.css --use postcss-nesting --dir dist",
@@ -30,15 +40,6 @@
     "stylelint": "^16.7.0",
     "stylelint-config-standard": "^36.0.1",
     "vite": "^5.3.4"
-  },
-  "exports": {
-    ".": "./dist/index.css",
-    "./*": "./dist/*.css",
-    "./min/*": "./dist/*.min.css",
-    "./css": "./dist/index.css",
-    "./css/min": "./dist/index.min.css",
-    "./css/*": "./dist/*.css",
-    "./css/min/*": "./dist/*.min.css"
   },
   "author": "nichoth <nichoth@nichoth.com> (https://nichoth.com)",
   "license": "MIT"

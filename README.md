@@ -28,12 +28,12 @@ This exposes CSS only.
 ### Import CSS
 
 ```js
-import '@substrate-system/css-util/css'
+import '@substrate-system/css-util'
 ```
 
 Or minified:
 ```js
-import '@substrate-system/css-util/css/min'
+import '@substrate-system/css-util/min'
 ```
 
 ### pre-built
@@ -42,7 +42,7 @@ accessible to your web server, then link to them in HTML.
 
 #### copy
 ```sh
-cp ./node_modules/@substrate-system/css-util/dist/style.min.css ./public/css-util.css
+cp ./node_modules/@substrate-system/css-util/dist/index.min.css ./public/css-util.css
 ```
 
 #### HTML
@@ -53,4 +53,29 @@ cp ./node_modules/@substrate-system/css-util/dist/style.min.css ./public/css-uti
 <body>
     <!-- ... -->
 </body>
+```
+
+## modules
+
+### `visually-hidden`
+
+```js
+import '@substrate-system/css-util/visually-hidden'
+
+// or minified
+import '@substrate-system/css-util/min/visually-hidden'
+```
+
+Corresponds to the class `.visaully-hidden`. This is explained in the article [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/). It is a utility class to hide content visually while keeping it screen-reader accessible.
+
+### `arrow`
+Factor out the css for back / next arrows, so there is less duplication.
+
+```js
+import '@substrate-system/css-util/arrow'
+```
+
+#### minified
+```js
+import '@substrate-system/css-util/min/arrow'
 ```
