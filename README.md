@@ -72,7 +72,7 @@ import '@substrate-system/css-util/min/visually-hidden'
 Corresponds to the class `.visaully-hidden`. This is explained in the article [Accessible Icon Buttons](https://www.sarasoueidan.com/blog/accessible-icon-buttons/). It is a utility class to hide content visually while keeping it screen-reader accessible.
 
 ### `arrow`
-Factor out the css for back / next arrows, so there is less duplication.
+Factor out the css for [back](https://github.com/substrate-system/arrow-prev) / [next](https://github.com/substrate-system/arrow-next) arrows, so there is less duplication.
 
 ```js
 import '@substrate-system/css-util/arrow'
